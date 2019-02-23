@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Publications"
-permalink: /publications/
+permalink: _pages/publications/
 author_profile: true
 ---
 A. Peer-reviewed Journal Papers
