@@ -3,6 +3,7 @@ layout: archive
 title: "Publications"
 permalink: _pages/publications/
 author_profile: true
+classes: wide
 ---
 ## A. Peer-reviewed Journal Papers
 
