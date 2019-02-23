@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Federico Celi"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profilo.jpg"
   bio              : "Master of Science in Robotics and Automation Engineering"
   location         : "Vercelli, VC, Italy"
   email            :
