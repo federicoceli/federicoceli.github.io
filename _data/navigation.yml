@@ -12,3 +12,7 @@ main:
   #   url: /sitemap/
     - title: "Projects"
       url: /projects/
+    - title: "Experience"
+      url: /projects/
+    - title: "Publications"
+      url: /projects/
