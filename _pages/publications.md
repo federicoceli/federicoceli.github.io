@@ -5,11 +5,11 @@ permalink: _pages/publications/
 author_profile: true
 classes: wide
 ---
-## A. Peer-reviewed Journal Papers
+## Peer-reviewed Journal Papers
 
-A1. **F. Celi**, L. Wang, L. Pallottino, and M. Egerstedt, "Deconiction of Motion Paths with Trafficc Inspired Rules in Robot-Robot and Human-Robot Interactions", IEEE Robotics and Automation Letters (RA-L), 2019.
+1. **F. Celi**, L. Wang, L. Pallottino, and M. Egerstedt, "Deconiction of Motion Paths with Trafficc Inspired Rules in Robot-Robot and Human-Robot Interactions", IEEE Robotics and Automation Letters (RA-L), 2019.
 
-## B. Peer-reviewed Conference Papers
+## Peer-reviewed Conference Papers
 
 1. A. S. Viglione, **F. Celi**, M. Mameli, P. Di Marco, and S. Filippeschi, “Melting Front Evolution of Paraffin Wax Inside Metal Foams at Different Acceleration Levels,” in 16th International Heat Transfer Conference, 2018.
 
