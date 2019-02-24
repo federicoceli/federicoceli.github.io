@@ -7,10 +7,12 @@ classes: wide
 ---
 ## Peer-reviewed Journal Papers
 
-1. **F. Celi**, L. Wang, L. Pallottino, and M. Egerstedt, "Deconiction of Motion Paths with Trafficc Inspired Rules in Robot-Robot and Human-Robot Interactions", IEEE Robotics and Automation Letters (RA-L), 2019.
+1. **F. Celi**, L. Wang, L. Pallottino, and M. Egerstedt, "Deconiction of Motion Paths with Traffic Inspired Rules in Robot-Robot and Human-Robot Interactions", IEEE Robotics and Automation Letters (RA-L), 2019.
 
 ## Peer-reviewed Conference Papers
 
 1. A. S. Viglione, **F. Celi**, M. Mameli, P. Di Marco, and S. Filippeschi, “Melting Front Evolution of Paraffin Wax Inside Metal Foams at Different Acceleration Levels,” in 16th International Heat Transfer Conference, 2018.
-
-1. P. Nannipieri, G. Meoni, F. Nesti, E. Mancini, **F. Celi**, L. Quadrelli, E. Ferrato, P. Guardati, F. Baronti, L. Fanucci, A. Signorini, and T. Nannipieri, “Application of FBG sensors to temperature measurement on board of the REXUS 22 sounding rocket in the framework of the U-PHOS project,” in 4th IEEE International Workshop on Metrology for AeroSpace, MetroAeroSpace 2017 - Proceedings, 2017.
+2. A. Catarsi, M. Anichini, L. Barsocchi, G. Becatti, L. Buoni, **F. Celi**, P. Fattibene, E. Mancini, G. Meoni, P. Nannipieri, F. Nesti, S. Piacquadio, E. Pratelli, A. S. Viglione, F. Zanaboni, M. Mameli, F. Baronti, L. Fanucci, S. Marcuccio, C. Bartoli, P. Di Marco, and S. Filippeschi, “U-PHOS Experiment: Thermal Response Of A Large Diameter Pulsating Heat Pipe On Board Rexus 22 Rocket,” in Proceedings of the 23rd ESA Symphosium on European Rocket and Balloon, programme and related research, 2018.
+3. P. Nannipieri, G. Meoni, F. Nesti, E. Mancini, **F. Celi**, L. Quadrelli, E. Ferrato, P. Guardati, F. Baronti, L. Fanucci, A. Signorini, and T. Nannipieri, “Application of FBG sensors to temperature measurement on board of the REXUS 22 sounding rocket in the framework of the U-PHOS project,” in 4th IEEE International Workshop on Metrology for AeroSpace, MetroAeroSpace 2017 - Proceedings, 2017.
+4. P. Nannipieri, M. Anichini, L. Barsocchi, G. Becatti, L. Buoni, A. Catarsi, **F. Celi**, P. Di Giorgio, P. Fattibene, E. Ferrato, P. Guardati, E. Mancini, G. Meoni, F. Nesti, S. Piaquadio, E. Pratelli, L. Quadrelli, A. Viglione, F. Zanaboni, C. Bartoli, P. Di Marco, S. Marcuccio, R. Di Rienzo, L. Fanucci, F. Baronti, M. Mameli, and S. Filippeschi, “The U-PHOS experience within the ESA student REXUS/BEXUS programme: A real space hands-on opportunity,” in IEEE Global Engineering Education Conference, EDUCON, 2017.
+5. P. Nannipieri, M. Anichini, L. Barsocchi, G. Becatti, L. Buoni, **F. Celi**, A. Catarsi, P. Di Giorgio, P. Fattibene, E. Ferrato, P. Guardati, E. Mancini, G. Meoni, F. Nesti, S. Piacquadio, E. Pratelli, L. Quadrelli, A. Viglione, F. Zanaboni, M. Mameli, F. Baronti, L. Fanucci, S. Marcuccio, C. Bartoli, P. Di Marco, N. Bianco, M. Marengo, and S. Filippeschi, “U-PHOS Project: Development of a Large Diameter Pulsating Heat Pipe Experiment on board REXUS 22,” Journal of Physics: Conference Series, vol. 796, no. 1, 2017.
