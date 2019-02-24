@@ -10,8 +10,7 @@ classes: wide
 
 **My contribution** I was responsible for the development of all necessary electronics (from sensors' selection to circuits design) and software to monitor the experiment and remotely control it, both automatically and by human intervention (collecting and synchronizing data from a number of sources: Pt100s, heat flux, LW IR cameras...).
 ## U-PHOS Project (2015-2017)
+<iframe  style="overflow:hidden;height:100%;width:100%" width="560" height="315" src="https://www.youtube.com/embed/wceYtA_PMr0" frameborder="0" allowfullscreen></iframe>
 **The Project** [U-PHOS (Upgraded Pulsating Heat pipe Only for Space)]() was a successful experiment, flown as part of the payload of ESA's REXUS 22 sounding Rocket, launched from ESRANGE Space Center in Kiruna, Sweden on March 17th, 2017.
 
 **My contribution** As Ground Station responsible, I developed the communication software to receive data live from the rocket as well as send commands to drive the experiment from Earth (LabVIEW, C, MATLAB); I also took part in the definition and development of the communication protocol and assisted on some minor aspects of the experiment on board software and integration.
-
-<iframe  style="overflow:hidden;height:100%;width:100%" src="https://www.youtube.com/embed/wceYtA_PMr0" frameborder="0" allowfullscreen></iframe>
