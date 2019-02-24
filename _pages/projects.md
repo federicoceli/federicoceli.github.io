@@ -12,6 +12,6 @@ classes: wide
 ## U-PHOS Project (2015-2017)
 <iframe  style="overflow:hidden;height:70%;width:70%" width="450" height="260" src="https://www.youtube.com/embed/VvYAvFBKqos?rel=0" frameborder="0" allowfullscreen></iframe>
 
-**The Project** U-PHOS (Upgraded Pulsating Heat pipe Only for Space) was a successful experiment, flown as part of the payload of ESA's REXUS 22 sounding Rocket, launched from ESRANGE Space Center in Kiruna, Sweden on March 17th, 2017.
+**The Project** [U-PHOS (Upgraded Pulsating Heat pipe Only for Space)](http://www.uphos.ing.unipi.it/project/) was a successful experiment, flown as part of the payload of ESA's REXUS 22 sounding Rocket, launched from ESRANGE Space Center in Kiruna, Sweden on March 17th, 2017.
 
 **My contribution** As Ground Station responsible, I developed the communication software to receive data live from the rocket as well as send commands to drive the experiment from Earth (LabVIEW, C, MATLAB); I also took part in the definition and development of the communication protocol and assisted on some minor aspects of the experiment on board software and integration.
