@@ -1,6 +1,6 @@
 ---
 title: "Experience"
-permalink: _pages/experience/
+permalink: /experience/
 layout: posts
 author_profile: true
 ---
