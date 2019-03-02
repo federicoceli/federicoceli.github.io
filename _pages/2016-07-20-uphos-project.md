@@ -1,6 +1,5 @@
 ---
 title: "Welcome"
-layout: post
 title:  "Welcome to Fede!"
 classes: wide
 ---
