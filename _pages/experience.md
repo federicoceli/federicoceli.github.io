@@ -5,4 +5,6 @@ layout: posts
 author_profile: true
 ---
 
-#hi
+{% for post in site.pages %}
+  {% include archive-single.html %}
+{% endfor %}
