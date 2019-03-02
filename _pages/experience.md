@@ -1,10 +1,10 @@
 ---
 title: "Experience"
-permalink: /experience/
+permalink: _pages/experience/
 layout: posts
 author_profile: true
 ---
 
-{% for post in site.post %}
+{% for post in site.pages %}
   {% include archive-single.html %}
 {% endfor %}
