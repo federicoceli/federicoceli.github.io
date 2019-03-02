@@ -13,6 +13,6 @@ main:
     - title: "Projects"
       url: _pages/projects/
     - title: "Experience"
-      url: /projects/
+      url: _pages/experience/
     - title: "Publications"
       url: _pages/publications/
