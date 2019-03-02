@@ -1,4 +1,5 @@
 ---
+title: "Welcome"
 layout: post
 title:  "Welcome to Fede!"
 ---
