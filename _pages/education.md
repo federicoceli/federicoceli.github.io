@@ -5,7 +5,7 @@ author_profile: true
 classes: wide
 ---
 
-<img src="/assets/images/unipi_logo.jpg" alt="Unipi logo" style="width:150px">
+<img src="/assets/images/unipi_logo.jpg" alt="Unipi logo" style="width:150px" style="float: right;">
 
 ### 2015-2018 Laurea Magistrale (M.Sc. equivalent)
 
