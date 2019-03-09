@@ -9,7 +9,7 @@ classes: wide
 
 Laurea Magistrale, Robotics and Automation Engineering, University of Pisa, Italy. 
 
-**Thesis:** _Deconfliction of Motion Paths in Robot-Robotand Human-Robot Interactions with BarrierCertificate Functions._
+**Thesis:** _Deconfliction of Motion Paths in Robot-Robot and Human-Robot Interactions with BarrierCertificate Functions._
 
 **Advisors:** Prof.ssa Lucia Pallottino, Dr. Magnus Egerstedt
 
