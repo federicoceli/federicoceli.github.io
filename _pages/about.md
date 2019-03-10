@@ -9,8 +9,8 @@ redirect_from:
 classes: wide
 
 gallery:
-  - url: /assets/images/uphos.JPG
-    image_path: /assets/images/uphos.JPG
+  - url: /assets/images/profile_gtech.JPG
+    image_path: /assets/images/profile_gtech.JPG
     alt: "placeholder image 1"
     title: "Image 1 title caption"
   - url: /assets/images/uphos.JPG
@@ -23,7 +23,7 @@ gallery:
     title: "Image 3 title caption"
 ---
 
-{% include gallery caption="This is a sample gallery with **Markdown support**." %}
+{% include gallery %}
 
 I am an Italian student, just graduated Master of Science in Robotics and Automation Engineering at the University of Pisa, Italy; my Bachelor Degree is in Computer Engineering. I have a two years experience in the space science and research field, having collaborated as a student with the European Space Agency. From December 2017 to June 2018 I was Visiting Scholar at the Georgia Institute of Technology under the supervision of [Dr. Magnus Egerstedt](https://magnus.ece.gatech.edu/) and [Prof.ssa Lucia Pallottino](http://www.centropiaggio.unipi.it/~pallottino), working on barrier certificates for safety of swarms of mixed human/autonomous networks of vehicles.
 
