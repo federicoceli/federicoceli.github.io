@@ -5,7 +5,25 @@ author_profile: true
 classes: wide
 ---
 
-<img src="/assets/images/unipi_logo.jpg" alt="Unipi logo" style="width:150px">
+### 2015-2018 Laurea Magistrale (M.Sc. equivalent)
 
-2015-2018 Laurea Magistrale (M.Sc. equivalent)
-Laurea Magistrale, Robotics and Automation Enginnering, University of Pisa, Italy. 
+Laurea Magistrale, Robotics and Automation Engineering, University of Pisa, Italy. 
+
+**Thesis:** _Deconfliction of Motion Paths in Robot-Robot and Human-Robot Interactions with BarrierCertificate Functions._
+
+**Advisors:** Prof.ssa Lucia Pallottino, Dr. Magnus Egerstedt
+
+### 2018 Visiting Scholar
+
+I was Visiting Scholar at Georgia Tech's IRIM.
+
+**Supervisor:** Dr. Magnus Egerstedt
+
+### 2011-2015 Laurea Triennale (B.Sc. equivalent)
+
+Laurea Triennale, Computer Engineering, University of Pisa, Italy. 
+
+**Thesis:** _A Java-Based Graphic User Interface
+for a Simulator of Synthetic Human Traces._
+
+**Advisors:** Prof. Gianluca Dini, Prof. Francesco Marcelloni
