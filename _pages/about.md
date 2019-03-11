@@ -17,7 +17,7 @@ gallery:
     image_path: /assets/images/profile_hympact.JPG
     alt: "Noordwijk (NL), ESA Large Diameter Centrifuge"
     title: "Noordwijk (NL), ESA Large Diameter Centrifuge"
-  - url: /assets/images/profile_uphos.JPG
+  - url: /assets/images/profile_uphos.jpg
     image_path: /assets/images/profile_uphos.jpg
     alt: "Kiruna (SW), SSC Esrange, with the U-PHOS Module"
     title: "Kiruna (SW), SSC Esrange, with the U-PHOS Module"
