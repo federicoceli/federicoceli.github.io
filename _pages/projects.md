@@ -4,13 +4,13 @@ permalink: _pages/projects/
 author_profile: true
 classes: wide
 gallery:
-  - url: /assets/images/uphos_1.JPG
-    image_path: /assets/images/uphos_1.JPG
+  - url: /assets/images/uphos_1.PNG
+    image_path: /assets/images/uphos_1.PNG
     alt: "a) PHP Test Cell Layout, geometry and measurements location; b) PHP test cell actual shape and
 main components."
     title: "PHP test cell"
-  - url: /assets/images/uphos_2.JPG
-    image_path: /assets/images/uphos_2.JPG
+  - url: /assets/images/uphos_2.PNG
+    image_path: /assets/images/uphos_2.PNG
     alt: "a) Rocket scheme and acceleration references; b) U-PHOS module scheme."
     title: "U-PHOS module"
   - url: /assets/images/uphos_3.jpeg
