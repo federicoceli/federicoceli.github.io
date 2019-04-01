@@ -3,7 +3,7 @@ title: "Projects"
 permalink: _pages/projects/
 author_profile: true
 classes: wide
-gallery_uphos:
+galuphos:
   - url: /assets/images/uphos_1.JPG
     image_path: /assets/images/uphos_1.JPG
     alt: "a) PHP Test Cell Layout, geometry and measurements location; b) PHP test cell actual shape and
@@ -26,7 +26,7 @@ main components."
 
 ## U-PHOS Project (2015-2017)
 
-{% include gallery_uphos %}
+{% include galuphos %}
 
 **The Project** [U-PHOS (Upgraded Pulsating Heat pipe Only for Space)]() was a successful experiment, flown as part of the payload of ESA's REXUS 22 sounding Rocket, launched from ESRANGE Space Center in Kiruna, Sweden on March 17th, 2017.
 
