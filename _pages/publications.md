@@ -6,7 +6,7 @@ classes: wide
 ---
 ## Peer-reviewed Journal Papers
 
-1. **F. Celi**, L. Wang, L. Pallottino, and M. Egerstedt, "Deconiction of Motion Paths with Traffic Inspired Rules in Robot-Robot and Human-Robot Interactions", IEEE Robotics and Automation Letters (RA-L), 2019. [PDF](/assets/pdf/08643446.pdf)
+1. **F. Celi**, L. Wang, L. Pallottino, and M. Egerstedt, "Deconiction of Motion Paths with Traffic Inspired Rules in Robot-Robot and Human-Robot Interactions", IEEE Robotics and Automation Letters (RA-L), 2019, **ICRA 2019 Best Paper Award on Human-Robot Interaction - Finalist**. [PDF](/assets/pdf/08643446.pdf)
 
 ## Peer-reviewed Conference Papers
 
