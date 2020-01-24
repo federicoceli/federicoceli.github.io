@@ -108,13 +108,13 @@ analytics:
 author:
   name             : "Federico Celi"
   avatar           : "/assets/images/profilo.jpg"
-  bio              : "Master of Science in Robotics and Automation Engineering"
-  location         : "Vercelli, VC, Italy"
+  bio              : "Ph.D. Student in Mechanical Engineer at the University of California, Riverside"
+  location         : "Riverside, CA, USA"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      url: mailto:fceli001@ucr.edu
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
