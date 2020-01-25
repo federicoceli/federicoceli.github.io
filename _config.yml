@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Federico Celi"
 title_separator          : "-"
 name                     : "Federico Celi"
-description              : "My home"
+description              : "Federico Celi homepage UCR Univeristy of California Riverside Pisa UNIPI"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Federico Celi"
-  avatar           : "/assets/images/profilo.jpg"
+  avatar           :  http://placehold.it/350x250
   bio              : "Ph.D. Student in Mechanical Engineer at the University of California, Riverside"
   location         : "Riverside, CA, USA"
   email            :
