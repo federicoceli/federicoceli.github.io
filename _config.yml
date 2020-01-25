@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Federico Celi"
-  avatar           :  http://placehold.it/350x250
+  avatar           : "/assets/images/profilo.jpg"
   bio              : "Ph.D. Student in Mechanical Engineer at the University of California, Riverside"
   location         : "Riverside, CA, USA"
   email            :
