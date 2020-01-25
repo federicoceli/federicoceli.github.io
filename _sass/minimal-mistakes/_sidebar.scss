@@ -133,7 +133,11 @@
     @include breakpoint($large) {
       padding: 5px;
       border: 1px solid $border-color;
-      max-width: 150px;
+      max-width: 175px;
+    }
+
+    @include breakpoint($medium) {
+      max-width: 100px;
     }
   }
 }
