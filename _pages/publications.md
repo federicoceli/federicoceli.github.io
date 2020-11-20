@@ -7,7 +7,7 @@ classes: wide
 ## Peer-reviewed Journal Papers
 
 1. **F. Celi**, A. Allibhoy, F. Pasqualetti, and J. Cortés, ["Linear-threshold dynamics for the study of epileptic events"](https://ieeexplore.ieee.org/document/9257486), IEEE Control Systems Letters (L-CSS), 2020. [PDF](/assets/pdf/20-FC-AA-FP-JC.pdf)
-2. **F. Celi**, L. Wang, L. Pallottino, and M. Egerstedt, ["Deconiction of Motion Paths with Traffic Inspired Rules in Robot-Robot and Human-Robot Interactions"](https://ieeexplore.ieee.org/document/8643446/), IEEE Robotics and Automation Letters (RA-L), 2019, **ICRA 2019 Best Paper Award on Human-Robot Interaction - Finalist**. [PDF](/assets/pdf/19-FC-LW-LP-ME.pdf)
+2. **F. Celi**, L. Wang, L. Pallottino, and M. Egerstedt, ["Deconfliction of Motion Paths with Traffic Inspired Rules in Robot-Robot and Human-Robot Interactions"](https://ieeexplore.ieee.org/document/8643446/), IEEE Robotics and Automation Letters (RA-L), 2019, **ICRA 2019 Best Paper Award on Human-Robot Interaction - Finalist**. [PDF](/assets/pdf/19-FC-LW-LP-ME.pdf)
 
 ## Peer-reviewed Conference Papers
 
