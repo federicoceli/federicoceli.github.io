@@ -11,7 +11,7 @@ classes: wide
 | <img src="/assets/images/amz_logo.png" width="120px"> | **Robotics Engineer Intern, 2019** <br> [Amazon Robotics](https://www.amazonrobotics.com/#/), Vercelli, Italy. <br> **Topics:** Warehouse robotics, robotic manipulators, machine learning, vision <br> **Supervisor:** Tolga Kol  ||
 {: .text-justify style="font-size: 12pt"}
 
-| <img src="/assets/images/unipi_logo.png" width="120px"> | **Laurea Magistrale (M.Sc. equivalent), 2018** <br> [Robotics and Automation Engineering](https://www.centropiaggio.unipi.it/research/robotics), University of Pisa, Italy. <br> **Thesis:** _Deconfliction of Motion Paths in Robot-Robot and Human-Robot Interactions with Barrier Certificate Functions._ [PDF](/assets/pdf/Celi_Thesis.pdf) - [Video](https://www.youtube.com/watch?v=sJsCEw-e8sc) <br> **Advisors:** Prof.ssa Lucia Pallottino, Dr. Magnus Egerstedt  ||
+| <img src="/assets/images/unipi_logo.png" width="150px"> | **Laurea Magistrale (M.Sc. equivalent), 2018** <br> [Robotics and Automation Engineering](https://www.centropiaggio.unipi.it/research/robotics), University of Pisa, Italy. <br> **Thesis:** _Deconfliction of Motion Paths in Robot-Robot and Human-Robot Interactions with Barrier Certificate Functions._ [PDF](/assets/pdf/Celi_Thesis.pdf) - [Video](https://www.youtube.com/watch?v=sJsCEw-e8sc) <br> **Advisors:** Prof.ssa Lucia Pallottino, Dr. Magnus Egerstedt  ||
 {: .text-justify style="font-size: 12pt"}
 
 | <img src="/assets/images/gt_logo.png" width="120px"> | **Visiting Scholar, 2018** <br> [Institute for Robotics and Intelligent Machines](http://www.robotics.gatech.edu), Georgia Institute of Technology, GA, USA. <br> **Advisor:** Dr. Magnus Egerstedt||
