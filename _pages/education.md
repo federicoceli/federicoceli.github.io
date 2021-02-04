@@ -23,4 +23,8 @@ output:
 {: .text-justify}
 
 | <img src="/assets/images/unipi_logo.png" width="120px"> | **Laurea Triennale (B.Sc. equivalent), 2015** <br> [Computer Engineering](https://computer.ing.unipi.it), University of Pisa, Italy. <br> **Thesis:** _A Java-Based Graphic User Interface for a Simulator of Synthetic Human Traces._ <br> **Advisors:** Prof. Gianluca Dini, Prof. Francesco Marcelloni||
+<<<<<<< HEAD
 {: .text-justify}
+=======
+{: .text-justify style="font-size: 12pt"}
+>>>>>>> 1b58f33265987e2fa0234e25c194c84ec0db24d7
