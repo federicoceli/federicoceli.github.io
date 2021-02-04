@@ -3,11 +3,6 @@ title: "Education and experience"
 permalink: _pages/education/
 author_profile: true
 classes: wide
-output: 
-  html_document:
-     css: demo.css
-     self_contained: no
-
 ---
 
 | <img src="/assets/images/ucr_logo.png" width="120px"> | **Ph.D., started 2019** <br> [Mechanical Engineering](http://www.fabiopas.it/index.html), University of California, Riverside, CA. <br> **Topics:** Network theory, brain networks, data driven controls <br> **Principal Investigator:** Dr. Fabio Pasqualetti  ||
