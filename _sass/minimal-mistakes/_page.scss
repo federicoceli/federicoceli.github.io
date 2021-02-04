@@ -31,6 +31,13 @@
     padding-right: $right-sidebar-width;
   }
 
+  img {
+    display: none;
+
+    @include breakpoint($medium) {
+      display: inline;
+    }
+  }
   .page__inner-wrap {
     float: left;
     margin-top: 1em;
@@ -75,7 +82,7 @@
   p,
   li,
   dl {
-    font-size: 0.85em; // 1em
+    font-size: 1em; // 1em
   }
 
   /* paragraph indents */
