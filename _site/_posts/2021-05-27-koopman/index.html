@@ -1,0 +1,483 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>L’Operatore di Koopman - Parte 1 - Federico Celi</title>
+<meta name="description" content="Federico Celi homepage UCR Univeristy of California Riverside Pisa UNIPI">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Federico Celi">
+<meta property="og:title" content="L’Operatore di Koopman - Parte 1">
+<meta property="og:url" content="http://localhost:4000/_posts/2021-05-27-koopman/">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/_posts/2021-05-27-koopman/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Federico Celi",
+      "url": "http://localhost:4000",
+      "sameAs": ["https://facebook.com/federico.celi","https://www.linkedin.com/in/federicoceli/"]
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="XcdjPrhoC43WB0bIgzuKUuv50os5pFSVE_gcZlUzNVg" />
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Federico Celi Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+  </head>
+
+  <body class="layout--posts wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">Federico Celi</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/_pages/research/" >Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/_pages/education/" >Education</a>
+            </li><li class="masthead__menu-item">
+              <a href="/_pages/publications/" >Publications</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/profilo.jpg" alt="Federico Celi" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Federico Celi</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Ph.D. Student in Mechanical Engineering at the University of California, Riverside
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Contacts</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Riverside, CA, USA</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:fceli001@ucr.edu" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+<li>
+  <a href="https://scholar.google.it/citations?user=7ihnSOQAAAAJ&hl=en&oi=ao" itemprop="sameAs" rel="nofollow noopener noreferrer">
+    <i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar
+  </a>
+</li>
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">L’Operatore di Koopman - Parte 1</h1>
+    
+    <p>\(\gdef\x{\textcolor{#f68161}{x}}\)
+\(\gdef\g{\textcolor{#7ed8ff}{g}}\)</p>
+
+<p>Avere un sistema lineare tra le mani è il sogno di qualsiasi controllista. I sistemi lineari sono belli perché di loro sappiamo tutto: sappiamo come si evolveranno nel tempo e come risponderanno ai nostri stimoli. E quindi sappiamo alla perfezione che ingressi dare ad un sistema lineare affinché si comporti esattamente come vogliamo noi. C’è un problema però: di fatto i sistemi non lineari non esistono. Ricordo la citazione di un libro di controllo [1] che diceva che dividere il mondo in sistemi lineari e non lineari è come dividerlo in banane e non banane. Certo, le banane esistono, ma prendendo un oggetto a caso nel mondo, la probabilità che questo sia una banana è nulla. Questa è, ovviamente, la salvezza dei matematici e degli ingegneri del controllo, visto che se le cose importanti nel mondo fossero un sistema lineare (e quindi facili da controllare) sarebbero inutili e quindi, di colpo, disoccupati. E, allora, lunga vita ai sistemi non lineari.</p>
+
+<p>Tutte le banane si somigliano; ogni non banana è non banana a modo suo. Questo per dire che non esiste un modo unico e sempre efficace per affrontare e controllare i sistemi lineari. Ci sono approcci, ormai considerati classici, per controllare sistemi non lineari, e tra questi ricordo alcuni dei più famosi, come i metodi derivanti dalla teoria di Lyapunov [2], lo sliding mode, la linearizzazione tramite feedback [3]. Tutti questi sono approcci molto validi e forti, usati tranquillamente in applicazioni lineari, anche se, di nuovo, ogni caso è diverso e ognuno ha i suoi vantaggi e svantaggi.</p>
+
+<p>Un’approccio molto interessante, vecchio di un secolo [4], ma che sta riprendendo piede ultimamente [5-6], è l’operatore di Koopman. Il sogno della teoria di Koopman è quello di prendere un sistema non lineare e renderlo lineare. Ora, potrebbero nascere due domande: (i) non esiste già una cosa del genere, tipo linearizzare attorno ad un equilibrio? E (ii) ma allora il caso è chiuso, abbiamo risolto tutti i nostri problemi? Per quanto riguarda la prima domanda, l’operatore di Koopman è più potente di una classica linearizzazione, ma (c’è sempre un ma, maledette non banane) non funziona sempre bene per tutti i sistemi (e quindi la risposta alla due è no, e possiamo dormire sogni tranquilli dalla disoccupazione). Cerchiamo di capire un po’ meglio di cosa si tratta.</p>
+
+<p>Per semplicità, considereremo sistemi a tempo discreto, anche se tutto questo vale anche per dinamiche tempo continue. Quindi in generale abbiamo</p>
+
+\[\begin{equation} \x[t+1] = F(\x[t]) \end{equation}\]
+
+<p>che, nel caso di un sistema lineare diventa</p>
+
+\[\begin{equation} \x[t+1] = A \x[t]. \end{equation}\]
+
+<p>Ora, consideriamo questo sistema non lineare</p>
+
+\[\begin{align*}
+    x_1[t+1] &amp; = 0.5 x_1[t]  \\
+    x_2[t+1] &amp; = x_1^2[t] + 0.4 x_2[t] \\
+\end{align*}\]
+
+<p>E’ non lineare perché c’è quel quadrato di \(x_1\). Ma cosa succede se aumentiamo lo stato e rendiamo \(x_1^2\) uno stato del sistema? Notiamo che</p>
+
+\[x_1^2[t + 1] = x_1[t+1] x_1[t+1] = (0.5 x_1[t]) (0.5 x_1[t]) = 0.25 x_1^2[t].\]
+
+<p>Possiamo quindi chiamare \(x_3 = x_1^2\) e riscrivere il sistema come</p>
+
+\[\begin{align*}
+    x_1[t+1] &amp; = 0.5 x_1[t]  \\
+    x_2[t+1] &amp; = 0.4 x_2[t] + x_3[t] \\
+    x_3[t+1] &amp; = 0.25 x_3[t]
+\end{align*}\]
+
+<p>Questo è un sistema lineare! Può sembrare magia ma è davvero così. Qualcuno penserà: ok ma stai barando, stai prendendo uno stato non lineare. Questa è stregoneria, non magia, e non vale. Ma invece è assolutamente legittimo prendere il quadrato di uno stato, alla fine uno stato è un numero (che dipendentemente dal sistema potresti misurare direttamente, e quindi è solo quello, un numero) e possiamo prenderne una qualsiasi funzione si voglia, un quadrato in questo caso. Notare che questa linearizzazione non ha comportato nessuna approssimazione: il sistema uno e due sono del tutto identici (ignorando \(x_3\) del secondo sistema, che non ci interesserà, e rimarrà nascosto).</p>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">%% Esempio sull'operatore di Koopman</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>      <span class="c1">% stati iniziali</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">;</span> <span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">^</span><span class="mi">2</span><span class="p">];</span>
+<span class="n">t_final</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+
+<span class="k">for</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">t_final</span>
+    <span class="c1">% sistema non lineare</span>
+    <span class="n">x</span><span class="p">(:,</span><span class="n">t</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">t</span><span class="p">);</span> <span class="mf">0.4</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.3</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">t</span><span class="p">)</span><span class="o">^</span><span class="mi">2</span><span class="p">];</span> 
+    <span class="c1">% linearizzato di Koopman</span>
+    <span class="n">y</span><span class="p">(:,</span><span class="n">t</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span> <span class="mi">0</span> <span class="mf">0.4</span> <span class="mf">0.3</span><span class="p">;</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mf">0.25</span><span class="p">]</span><span class="o">*</span><span class="n">y</span><span class="p">(:,</span><span class="n">t</span><span class="p">);</span>   
+<span class="k">end</span>
+
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span> <span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="o">'</span><span class="p">)</span>
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span> <span class="nb">plot</span><span class="p">(</span><span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,:)</span><span class="o">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Questa è l’intuizione alla base della teoria di Koopman: prendere un sistema non lineare di un certo grado (cioè con un certo numero di ingressi, in questo caso due) e aumentarlo, cioè incrementarne il numero di stati (in questo caso a tre) ma rendendolo lineare. Il problema? Non sempre funziona così bene e può capitare di arrivare ad un sistema lineare con un numero di stati infinito (un po’ come avere una serie di Taylor). Ora la scelta è tra un sistema non lineare di una certa dimensione finita, o un sistema lineare ma infinito dimensionale.<br />
+Se vi ho convinto che e’ un strumento interessante, che risolve un problema importante, ora possiamo vedere un po’ di teoria.</p>
+
+<p>Assumiamo di misurare tutto lo stato di un sistema. Chiamiamo \(g\) una famiglia (o base) di funzioni (non lineari) dello stato. Ovvero assumiamo di misurare lo stato e di poterlo combinare come vogliamo, ad esempio prima abbiamo preso il primo elemento, il secondo elemento, e infine il quadrato del primo elemento, \(g(x) = [x_1 \; x_2 \; x_1^2]^\top\). L’operatore di Koopman è definito come un operatore lineare  infinito-dimensionale che opera su \(g\) e tale che</p>
+
+\[\begin{equation} K \g = \g \circ F \end{equation}\]
+
+<p>dove \(F\) è il nostro sistema non lineare. A me piace di più vederlo così (le due equazioni sono equivalenti)</p>
+
+\[\begin{equation} K \g(\x[t]) = \g(F(\x[t])). \end{equation}\]
+
+<p>Fermiamoci un attimo e ragioniamo su questa equazione che non è proprio intuitiva alla prima. Come detto, \(x[t]\) è lo stato che descrive il sistema in questo momento, e che abbiamo disponibile. Nel termine a sinistra dell’equazione, prendiamo questo stato \(x\) e ne consideriamo una funzione non lineare; poi la moltiplichiamo per una matrice \(K\): cioè consideriamo una combinazione lineare di una base di funzioni non lineari. Il vettore \(g[t] = g(x[t])\) diventa quindi lo stato aumentato e \(K g[t]\) è il nostro sistema lineare. Infatti, quando l’equazione è valida, allora</p>
+
+\[K g(x[t]) = g(F(x[t])) = g(x[t+1])\]
+
+<p>o, in un altro modo,</p>
+
+\[\begin{equation} \g[t+1] = K \g[t]. \end{equation}\]
+
+<p>Finalmente, abbiamo un sistema che evolve secondo una dinamica lineare \(K\).</p>
+
+<p>Nel nostro esempio \(x\) era un subset di \(g\), e quindi possiamo semplicemente usare \(g[t+1] = K g[t]\) e recuperare \(x[k]\) per qualsiasi \(k \geq t\) quando vogliamo, semplicemente dicendo \(x = [g_1, g_2]\). A volte, però, \(g\) potrebbe essere una una funzione non invertibile, e quindi non è sempre possibile ricostruire lo stato del sistema che ci interessa davvero, \(\x\), dallo stato del sistema che abbiamo creato, \(\g\).</p>
+
+<p>Nella prossima parte di questa piccola presentazione sull’operatore di Koopman cercheremo di capire perchè questa teoria sia tornata in auge: c’entra la teoria dei sistemi data-driven.</p>
+
+<h2 id="riferimenti">Riferimenti</h2>
+<p>[1] Mesbahi, M., &amp; Egerstedt, M. (2010). Graph theoretic methods in multiagent networks (Vol. 33). Princeton University Press.</p>
+
+<p>[2] Fornasini, E., Marchesini, G. (2011). Appunti di teoria dei sistemi. Progetto Libreria Padova.</p>
+
+<p>[3] Khalil, H. K., &amp; Grizzle, J. W. (2002). Nonlinear systems (Vol. 3). Upper Saddle River, NJ: Prentice hall.</p>
+
+<p>[4] Koopman, B. O. (1931). Hamiltonian systems and transformation in Hilbert space. Proceedings of the national academy of sciences of the united states of america, 17(5), 315.
+Chicago</p>
+
+<p>[5] Mezić, I. (2005). Spectral properties of dynamical systems, model reduction and decompositions. Nonlinear Dynamics, 41(1), 309-325.</p>
+
+<p>[6] Brunton, S. L., &amp; Kutz, J. N. (2019). Data-driven science and engineering: Machine learning, dynamical systems, and control. Cambridge University Press.</p>
+
+
+<ul class="taxonomy__index">
+  
+  
+    <li>
+      <a href="#2021">
+        <strong>2021</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+  <section id="2021" class="taxonomy__section">
+    <h2 class="archive__subtitle">2021</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/koopman/" rel="permalink">L’Operatore di Koopman - Parte 1
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">\(\gdef\x{\textcolor{#f68161}{x}}\)
+\(\gdef\g{\textcolor{#7ed8ff}{g}}\)
+
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+  </section>
+
+
+  </div>
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Contacts</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Federico Celi. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

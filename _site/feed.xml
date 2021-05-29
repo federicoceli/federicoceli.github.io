@@ -1,1 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-19T15:26:22-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Federico Celi</title><subtitle>Federico Celi homepage UCR Univeristy of California Riverside Pisa UNIPI</subtitle><author><name>Federico Celi</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-05-28T18:15:07-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Federico Celi</title><subtitle>Federico Celi homepage UCR Univeristy of California Riverside Pisa UNIPI</subtitle><author><name>Federico Celi</name></author><entry><title type="html">L’Operatore di Koopman - Parte 1</title><link href="http://localhost:4000/koopman/" rel="alternate" type="text/html" title="L’Operatore di Koopman - Parte 1" /><published>2021-05-27T00:00:00-07:00</published><updated>2021-05-27T00:00:00-07:00</updated><id>http://localhost:4000/koopman</id><content type="html" xml:base="http://localhost:4000/koopman/">&lt;p&gt;\(\gdef\x{\textcolor{#f68161}{x}}\)
+\(\gdef\g{\textcolor{#7ed8ff}{g}}\)&lt;/p&gt;
+
+&lt;p&gt;Avere un sistema lineare tra le mani è il sogno di qualsiasi controllista. I sistemi lineari sono belli perché di loro sappiamo tutto: sappiamo come si evolveranno nel tempo e come risponderanno ai nostri stimoli. E quindi sappiamo alla perfezione che ingressi dare ad un sistema lineare affinché si comporti esattamente come vogliamo noi. C’è un problema però: di fatto i sistemi non lineari non esistono. Ricordo la citazione di un libro di controllo [1] che diceva che dividere il mondo in sistemi lineari e non lineari è come dividerlo in banane e non banane. Certo, le banane esistono, ma prendendo un oggetto a caso nel mondo, la probabilità che questo sia una banana è nulla. Questa è, ovviamente, la salvezza dei matematici e degli ingegneri del controllo, visto che se le cose importanti nel mondo fossero un sistema lineare (e quindi facili da controllare) sarebbero inutili e quindi, di colpo, disoccupati. E, allora, lunga vita ai sistemi non lineari.&lt;/p&gt;
+
+&lt;p&gt;Tutte le banane si somigliano; ogni non banana è non banana a modo suo. Questo per dire che non esiste un modo unico e sempre efficace per affrontare e controllare i sistemi lineari. Ci sono approcci, ormai considerati classici, per controllare sistemi non lineari, e tra questi ricordo alcuni dei più famosi, come i metodi derivanti dalla teoria di Lyapunov [2], lo sliding mode, la linearizzazione tramite feedback [3]. Tutti questi sono approcci molto validi e forti, usati tranquillamente in applicazioni lineari, anche se, di nuovo, ogni caso è diverso e ognuno ha i suoi vantaggi e svantaggi.&lt;/p&gt;
+
+&lt;p&gt;Un’approccio molto interessante, vecchio di un secolo [4], ma che sta riprendendo piede ultimamente [5-6], è l’operatore di Koopman. Il sogno della teoria di Koopman è quello di prendere un sistema non lineare e renderlo lineare. Ora, potrebbero nascere due domande: (i) non esiste già una cosa del genere, tipo linearizzare attorno ad un equilibrio? E (ii) ma allora il caso è chiuso, abbiamo risolto tutti i nostri problemi? Per quanto riguarda la prima domanda, l’operatore di Koopman è più potente di una classica linearizzazione, ma (c’è sempre un ma, maledette non banane) non funziona sempre bene per tutti i sistemi (e quindi la risposta alla due è no, e possiamo dormire sogni tranquilli dalla disoccupazione). Cerchiamo di capire un po’ meglio di cosa si tratta.&lt;/p&gt;
+
+&lt;p&gt;Per semplicità, considereremo sistemi a tempo discreto, anche se tutto questo vale anche per dinamiche tempo continue. Quindi in generale abbiamo&lt;/p&gt;
+
+\[\begin{equation} \x[t+1] = F(\x[t]) \end{equation}\]
+
+&lt;p&gt;che, nel caso di un sistema lineare diventa&lt;/p&gt;
+
+\[\begin{equation} \x[t+1] = A \x[t]. \end{equation}\]
+
+&lt;p&gt;Ora, consideriamo questo sistema non lineare&lt;/p&gt;
+
+\[\begin{align*}
+    x_1[t+1] &amp;amp; = 0.5 x_1[t]  \\
+    x_2[t+1] &amp;amp; = x_1^2[t] + 0.4 x_2[t] \\
+\end{align*}\]
+
+&lt;p&gt;E’ non lineare perché c’è quel quadrato di \(x_1\). Ma cosa succede se aumentiamo lo stato e rendiamo \(x_1^2\) uno stato del sistema? Notiamo che&lt;/p&gt;
+
+\[x_1^2[t + 1] = x_1[t+1] x_1[t+1] = (0.5 x_1[t]) (0.5 x_1[t]) = 0.25 x_1^2[t].\]
+
+&lt;p&gt;Possiamo quindi chiamare \(x_3 = x_1^2\) e riscrivere il sistema come&lt;/p&gt;
+
+\[\begin{align*}
+    x_1[t+1] &amp;amp; = 0.5 x_1[t]  \\
+    x_2[t+1] &amp;amp; = 0.4 x_2[t] + x_3[t] \\
+    x_3[t+1] &amp;amp; = 0.25 x_3[t]
+\end{align*}\]
+
+&lt;p&gt;Questo è un sistema lineare! Può sembrare magia ma è davvero così. Qualcuno penserà: ok ma stai barando, stai prendendo uno stato non lineare. Questa è stregoneria, non magia, e non vale. Ma invece è assolutamente legittimo prendere il quadrato di uno stato, alla fine uno stato è un numero (che dipendentemente dal sistema potresti misurare direttamente, e quindi è solo quello, un numero) e possiamo prenderne una qualsiasi funzione si voglia, un quadrato in questo caso. Notare che questa linearizzazione non ha comportato nessuna approssimazione: il sistema uno e due sono del tutto identici (ignorando \(x_3\) del secondo sistema, che non ci interesserà, e rimarrà nascosto).&lt;/p&gt;
+
+&lt;div class=&quot;language-matlab highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;%% Esempio sull'operatore di Koopman&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;rand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;      &lt;span class=&quot;c1&quot;&gt;% stati iniziali&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;t_final&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t_final&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;% sistema non lineare&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; 
+    &lt;span class=&quot;c1&quot;&gt;% linearizzato di Koopman&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.4&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;   
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;subplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;subplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Questa è l’intuizione alla base della teoria di Koopman: prendere un sistema non lineare di un certo grado (cioè con un certo numero di ingressi, in questo caso due) e aumentarlo, cioè incrementarne il numero di stati (in questo caso a tre) ma rendendolo lineare. Il problema? Non sempre funziona così bene e può capitare di arrivare ad un sistema lineare con un numero di stati infinito (un po’ come avere una serie di Taylor). Ora la scelta è tra un sistema non lineare di una certa dimensione finita, o un sistema lineare ma infinito dimensionale.&lt;br /&gt;
+Se vi ho convinto che e’ un strumento interessante, che risolve un problema importante, ora possiamo vedere un po’ di teoria.&lt;/p&gt;
+
+&lt;p&gt;Assumiamo di misurare tutto lo stato di un sistema. Chiamiamo \(g\) una famiglia (o base) di funzioni (non lineari) dello stato. Ovvero assumiamo di misurare lo stato e di poterlo combinare come vogliamo, ad esempio prima abbiamo preso il primo elemento, il secondo elemento, e infine il quadrato del primo elemento, \(g(x) = [x_1 \; x_2 \; x_1^2]^\top\). L’operatore di Koopman è definito come un operatore lineare  infinito-dimensionale che opera su \(g\) e tale che&lt;/p&gt;
+
+\[\begin{equation} K \g = \g \circ F \end{equation}\]
+
+&lt;p&gt;dove \(F\) è il nostro sistema non lineare. A me piace di più vederlo così (le due equazioni sono equivalenti)&lt;/p&gt;
+
+\[\begin{equation} K \g(\x[t]) = \g(F(\x[t])). \end{equation}\]
+
+&lt;p&gt;Fermiamoci un attimo e ragioniamo su questa equazione che non è proprio intuitiva alla prima. Come detto, \(x[t]\) è lo stato che descrive il sistema in questo momento, e che abbiamo disponibile. Nel termine a sinistra dell’equazione, prendiamo questo stato \(x\) e ne consideriamo una funzione non lineare; poi la moltiplichiamo per una matrice \(K\): cioè consideriamo una combinazione lineare di una base di funzioni non lineari. Il vettore \(g[t] = g(x[t])\) diventa quindi lo stato aumentato e \(K g[t]\) è il nostro sistema lineare. Infatti, quando l’equazione è valida, allora&lt;/p&gt;
+
+\[K g(x[t]) = g(F(x[t])) = g(x[t+1])\]
+
+&lt;p&gt;o, in un altro modo,&lt;/p&gt;
+
+\[\begin{equation} \g[t+1] = K \g[t]. \end{equation}\]
+
+&lt;p&gt;Finalmente, abbiamo un sistema che evolve secondo una dinamica lineare \(K\).&lt;/p&gt;
+
+&lt;p&gt;Nel nostro esempio \(x\) era un subset di \(g\), e quindi possiamo semplicemente usare \(g[t+1] = K g[t]\) e recuperare \(x[k]\) per qualsiasi \(k \geq t\) quando vogliamo, semplicemente dicendo \(x = [g_1, g_2]\). A volte, però, \(g\) potrebbe essere una una funzione non invertibile, e quindi non è sempre possibile ricostruire lo stato del sistema che ci interessa davvero, \(\x\), dallo stato del sistema che abbiamo creato, \(\g\).&lt;/p&gt;
+
+&lt;p&gt;Nella prossima parte di questa piccola presentazione sull’operatore di Koopman cercheremo di capire perchè questa teoria sia tornata in auge: c’entra la teoria dei sistemi data-driven.&lt;/p&gt;
+
+&lt;h2 id=&quot;riferimenti&quot;&gt;Riferimenti&lt;/h2&gt;
+&lt;p&gt;[1] Mesbahi, M., &amp;amp; Egerstedt, M. (2010). Graph theoretic methods in multiagent networks (Vol. 33). Princeton University Press.&lt;/p&gt;
+
+&lt;p&gt;[2] Fornasini, E., Marchesini, G. (2011). Appunti di teoria dei sistemi. Progetto Libreria Padova.&lt;/p&gt;
+
+&lt;p&gt;[3] Khalil, H. K., &amp;amp; Grizzle, J. W. (2002). Nonlinear systems (Vol. 3). Upper Saddle River, NJ: Prentice hall.&lt;/p&gt;
+
+&lt;p&gt;[4] Koopman, B. O. (1931). Hamiltonian systems and transformation in Hilbert space. Proceedings of the national academy of sciences of the united states of america, 17(5), 315.
+Chicago&lt;/p&gt;
+
+&lt;p&gt;[5] Mezić, I. (2005). Spectral properties of dynamical systems, model reduction and decompositions. Nonlinear Dynamics, 41(1), 309-325.&lt;/p&gt;
+
+&lt;p&gt;[6] Brunton, S. L., &amp;amp; Kutz, J. N. (2019). Data-driven science and engineering: Machine learning, dynamical systems, and control. Cambridge University Press.&lt;/p&gt;</content><author><name>Federico Celi</name></author><summary type="html">\(\gdef\x{\textcolor{#f68161}{x}}\) \(\gdef\g{\textcolor{#7ed8ff}{g}}\)</summary></entry></feed>

@@ -160,6 +160,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -281,6 +282,10 @@ compress_html:
   ignore:
     envs: development
 
+markdown: kramdown
+
+kramdown:
+  math_engine: katex
 
 defaults:
   # _posts
@@ -294,6 +299,7 @@ defaults:
       comments: true
       share: true
       related: true
+      
 
 defaults:
   # _pages
