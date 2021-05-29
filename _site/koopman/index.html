@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>L’Operatore di Koopman - Parte 1 - Federico Celi</title>
-<meta name="description" content="\(\gdef\x{\textcolor{#f68161}{x}}\)\(\gdef\g{\textcolor{#7ed8ff}{g}}\)">
+<meta name="description" content="Avere un sistema lineare tra le mani è il sogno di qualsiasi controllista. I sistemi lineari sono belli perché di loro sappiamo tutto: sappiamo come si evolveranno nel tempo e come risponderanno ai nostri stimoli. E quindi sappiamo alla perfezione che ingressi dare ad un sistema lineare affinché si comporti esattamente come vogliamo noi. C’è un problema però: di fatto i sistemi non lineari non esistono. Ricordo la citazione di un libro di controllo [1] che diceva che dividere il mondo in sistemi lineari e non lineari è come dividerlo in banane e non banane. Certo, le banane esistono, ma prendendo un oggetto a caso nel mondo, la probabilità che questo sia una banana è nulla. Questa è, ovviamente, la salvezza dei matematici e degli ingegneri del controllo, visto che se le cose importanti nel mondo fossero un sistema lineare (e quindi facili da controllare) sarebbero inutili e quindi, di colpo, disoccupati. E, allora, lunga vita ai sistemi non lineari.">
 
 
 
@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://localhost:4000/koopman/">
 
 
-  <meta property="og:description" content="\(\gdef\x{\textcolor{#f68161}{x}}\)\(\gdef\g{\textcolor{#7ed8ff}{g}}\)">
+  <meta property="og:description" content="Avere un sistema lineare tra le mani è il sogno di qualsiasi controllista. I sistemi lineari sono belli perché di loro sappiamo tutto: sappiamo come si evolveranno nel tempo e come risponderanno ai nostri stimoli. E quindi sappiamo alla perfezione che ingressi dare ad un sistema lineare affinché si comporti esattamente come vogliamo noi. C’è un problema però: di fatto i sistemi non lineari non esistono. Ricordo la citazione di un libro di controllo [1] che diceva che dividere il mondo in sistemi lineari e non lineari è come dividerlo in banane e non banane. Certo, le banane esistono, ma prendendo un oggetto a caso nel mondo, la probabilità che questo sia una banana è nulla. Questa è, ovviamente, la salvezza dei matematici e degli ingegneri del controllo, visto che se le cose importanti nel mondo fossero un sistema lineare (e quindi facili da controllare) sarebbero inutili e quindi, di colpo, disoccupati. E, allora, lunga vita ai sistemi non lineari.">
 
 
 
@@ -113,7 +113,7 @@
     <!-- To automatically render math in text elements, include the auto-render extension: -->
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
         onload="renderMathInElement(document.body);"></script>
-
+    
   </head>
 
   <body class="layout--posts wide">
@@ -284,14 +284,14 @@
     
       <h1 id="page-title" class="page__title">L’Operatore di Koopman - Parte 1</h1>
     
-    <p>\(\gdef\x{\textcolor{#f68161}{x}}\)
-\(\gdef\g{\textcolor{#7ed8ff}{g}}\)</p>
-
-<p>Avere un sistema lineare tra le mani è il sogno di qualsiasi controllista. I sistemi lineari sono belli perché di loro sappiamo tutto: sappiamo come si evolveranno nel tempo e come risponderanno ai nostri stimoli. E quindi sappiamo alla perfezione che ingressi dare ad un sistema lineare affinché si comporti esattamente come vogliamo noi. C’è un problema però: di fatto i sistemi non lineari non esistono. Ricordo la citazione di un libro di controllo [1] che diceva che dividere il mondo in sistemi lineari e non lineari è come dividerlo in banane e non banane. Certo, le banane esistono, ma prendendo un oggetto a caso nel mondo, la probabilità che questo sia una banana è nulla. Questa è, ovviamente, la salvezza dei matematici e degli ingegneri del controllo, visto che se le cose importanti nel mondo fossero un sistema lineare (e quindi facili da controllare) sarebbero inutili e quindi, di colpo, disoccupati. E, allora, lunga vita ai sistemi non lineari.</p>
+    <p>Avere un sistema lineare tra le mani è il sogno di qualsiasi controllista. I sistemi lineari sono belli perché di loro sappiamo tutto: sappiamo come si evolveranno nel tempo e come risponderanno ai nostri stimoli. E quindi sappiamo alla perfezione che ingressi dare ad un sistema lineare affinché si comporti esattamente come vogliamo noi. C’è un problema però: di fatto i sistemi non lineari non esistono. Ricordo la citazione di un libro di controllo [1] che diceva che dividere il mondo in sistemi lineari e non lineari è come dividerlo in banane e non banane. Certo, le banane esistono, ma prendendo un oggetto a caso nel mondo, la probabilità che questo sia una banana è nulla. Questa è, ovviamente, la salvezza dei matematici e degli ingegneri del controllo, visto che se le cose importanti nel mondo fossero un sistema lineare (e quindi facili da controllare) sarebbero inutili e quindi, di colpo, disoccupati. E, allora, lunga vita ai sistemi non lineari.</p>
 
 <p>Tutte le banane si somigliano; ogni non banana è non banana a modo suo. Questo per dire che non esiste un modo unico e sempre efficace per affrontare e controllare i sistemi lineari. Ci sono approcci, ormai considerati classici, per controllare sistemi non lineari, e tra questi ricordo alcuni dei più famosi, come i metodi derivanti dalla teoria di Lyapunov [2], lo sliding mode, la linearizzazione tramite feedback [3]. Tutti questi sono approcci molto validi e forti, usati tranquillamente in applicazioni lineari, anche se, di nuovo, ogni caso è diverso e ognuno ha i suoi vantaggi e svantaggi.</p>
 
 <p>Un’approccio molto interessante, vecchio di un secolo [4], ma che sta riprendendo piede ultimamente [5-6], è l’operatore di Koopman. Il sogno della teoria di Koopman è quello di prendere un sistema non lineare e renderlo lineare. Ora, potrebbero nascere due domande: (i) non esiste già una cosa del genere, tipo linearizzare attorno ad un equilibrio? E (ii) ma allora il caso è chiuso, abbiamo risolto tutti i nostri problemi? Per quanto riguarda la prima domanda, l’operatore di Koopman è più potente di una classica linearizzazione, ma (c’è sempre un ma, maledette non banane) non funziona sempre bene per tutti i sistemi (e quindi la risposta alla due è no, e possiamo dormire sogni tranquilli dalla disoccupazione). Cerchiamo di capire un po’ meglio di cosa si tratta.</p>
+
+<p>\(\gdef\x{\textcolor{#f68161}{x}}\)
+\(\gdef\g{\textcolor{#7ed8ff}{g}}\)</p>
 
 <p>Per semplicità, considereremo sistemi a tempo discreto, anche se tutto questo vale anche per dinamiche tempo continue. Quindi in generale abbiamo</p>
 
@@ -417,10 +417,7 @@ Chicago</p>
   6 minute read
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">\(\gdef\x{\textcolor{#f68161}{x}}\)
-\(\gdef\g{\textcolor{#7ed8ff}{g}}\)
-
-</p>
+    <p class="archive__item-excerpt" itemprop="description">Avere un sistema lineare tra le mani è il sogno di qualsiasi controllista. I sistemi lineari sono belli perché di loro sappiamo tutto: sappiamo come si evolv...</p>
   </article>
 </div>
 
