@@ -4,13 +4,13 @@ permalink: _pages/publications/
 author_profile: true
 classes: wide
 ---
-## Peer-reviewed Journal Papers
+## Journal Papers
 
-1. **F. Celi**, F. Pasqualetti ["Data-driven Meets Geometric Control: Zero Dynamics, Subspace Stabilization, and Malicious Attacks"](https://arxiv.org/pdf/2201.03656.pdf), IEEE Control Systems Letters, 2022. Submitted. [arXiv](https://arxiv.org/pdf/2201.03656.pdf)
+1. **F. Celi**, F. Pasqualetti ["Data-driven Meets Geometric Control: Zero Dynamics, Subspace Stabilization, and Malicious Attacks"](https://arxiv.org/pdf/2201.03656.pdf), IEEE Control Systems Letters, 2022. _Submitted_. [arXiv](https://arxiv.org/pdf/2201.03656.pdf)
 1. **F. Celi**\*, A. Allibhoy*, F. Pasqualetti, and J. Cortés, ["Linear-threshold dynamics for the study of epileptic events"](https://ieeexplore.ieee.org/document/9257486), IEEE Control Systems Letters (L-CSS), 2020. [PDF](/assets/pdf/20-FC-AA-FP-JC.pdf)
 2. **F. Celi**, L. Wang, L. Pallottino, and M. Egerstedt, ["Deconfliction of Motion Paths with Traffic Inspired Rules in Robot-Robot and Human-Robot Interactions"](https://ieeexplore.ieee.org/document/8643446/), IEEE Robotics and Automation Letters (RA-L), 2019, <i class="fas fa-trophy" aria-hidden="true"></i> **ICRA 2019 Best Paper Award on Human-Robot Interaction - Finalist**. [PDF](/assets/pdf/19-FC-LW-LP-ME.pdf)
 
-## Peer-reviewed Conference Papers
+## Conference Papers
 1. J. Swartz, **F. Celi**, F. Pasqualetti, and A. von Meier, ["Parameter Conditions to Prevent Voltage Oscillations Caused by LTC-Inverter Hunting on Power Distribution Grids"](https://arxiv.org/abs/2111.04815). IEEE European Control Conference, London, United Kingdom, 2022. _Submitted_ [arXiv](https://arxiv.org/abs/2111.04815)
 1. **F. Celi**, G. Baggio, and F. Pasqualetti, "Distributed Learning of Optimal Controls for Linear Systems". IEEE Conf. on Decision and Control, Austin, TX, December 2021. Accepted.
 3. A. S. Viglione, **F. Celi**, M. Mameli, P. Di Marco, and S. Filippeschi, [“Melting Front Evolution of Paraffin Wax Inside Metal Foams at Different Acceleration Levels”](http://ihtcdigitallibrary.com/conferences/ihtc16,12836fc9222e6095,292c90a229876f74.html), in 16th International Heat Transfer Conference, 2018.

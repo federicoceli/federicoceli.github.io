@@ -73,7 +73,7 @@
   font-size: $type-size-7;
 }
 
-.page__content {
+.page__content {s
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
@@ -82,7 +82,7 @@
   p,
   li,
   dl {
-    font-size: 1em; // 1em
+    font-size: $type-size-5e5; // 1em
   }
 
   /* paragraph indents */

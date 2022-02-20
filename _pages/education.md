@@ -5,6 +5,8 @@ author_profile: true
 classes: wide
 ---
 
+**Ph.D., started 2019** <br> [Mechanical Engineering](http://www.fabiopas.it/index.html), University of California, Riverside, CA. <br> **Topics:** Network theory, brain networks, data driven controls <br> **Principal Investigator:** Dr. Fabio Pasqualetti
+
 | <img src="/assets/images/ucr_logo.png" width="120px"> | **Ph.D., started 2019** <br> [Mechanical Engineering](http://www.fabiopas.it/index.html), University of California, Riverside, CA. <br> **Topics:** Network theory, brain networks, data driven controls <br> **Principal Investigator:** Dr. Fabio Pasqualetti  ||
 {: .text-justify}
 
