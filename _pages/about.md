@@ -23,6 +23,18 @@ gallery:
     title: "Kiruna (SW), SSC Esrange, with the U-PHOS Module"
 ---
 {% include gallery %}
-I am currently pursuing a Ph.D in Mechanical Engineering at UC Riverside, in [Dr. Fabio Pasqualetti](http://www.fabiopas.it/)’s lab. Previously, I obtained a M.Sc. is in Robotics and Automation Engineering and a B.Sc. is in Computer Engineering, both from the University of Pisa, Italy.  I have a two years experience in the space science and research field, having collaborated as a student with the European Space Agency. From December 2017 to June 2018 I was Visiting Scholar at the Georgia Institute of Technology under the supervision of [Dr. Magnus Egerstedt](https://magnus.ece.gatech.edu/) and [Prof.ssa Lucia Pallottino](http://www.centropiaggio.unipi.it/~pallottino), working on barrier certificates for safety of swarms of mixed human/autonomous networks of vehicles. In 2019 I was Robotics Engineer Intern at Amazon Advanced Technologies Europe.
+I am a third year Ph.D. Candidate in Mechanical Engineering, having joined Professor [Fabio Pasqualetti](http://www.fabiopas.it/)’s lab at UC Riverside in the Fall of 2019. Since then, I have been working on control theory with a focus on optimal data-driven controls and networked controls. In 2018 I graduated with a M.Sc. in Robotics and Automation Engineering from the University of Pisa; during that time I also visited Georgia Tech’s IRIM while working on my dissertation, supervised by Prof.ssa [Lucia Pallottino](http://www.centropiaggio.unipi.it/~pallottino) and Professor [Magnus Egerstedt](https://en.wikipedia.org/wiki/Magnus_Egerstedt). 
+
+In the past I also worked as intern at Amazon Robotics and I took part in two projects sponsored by the European Space Agency. My B.Sc. is in Computer Engineering.  
+
+---
+**NEWS**
+
+- [**Jan '22**] Read our latest L-CSS [submission](https://arxiv.org/pdf/2201.03656.pdf) on Geometric + Data-driven Controls.
+- [**Dec '21**] Our [work](https://ieeexplore.ieee.org/document/9683707) on distributed optimal data-driven controls appeared in the proceedings of the 60th CDC. Thank you Prof. [Giacomo Baggio](https://baggiogi.github.io) for the significant contribution to this work. 
+- [**Nov '21**] It was fun to work with [Jaimie Swartz](https://people.eecs.berkeley.edu/~jaimie.swartz/index.html) at UC Berkley on conditions for oscillations in the power grid. Read about it on our [submission](https://arxiv.org/abs/2111.04815) to the 2022 ECC.
+- [**Oct '21**] The new L-CSS issue is out, together with our [paper](https://ieeexplore.ieee.org/document/9257486) on Linear Threshold Networks and their application to the study of epilepsy in the human brain. My thanks to [Ahmed Allihboy](https://ahmedallibhoy.github.io) and [Jorge Cortés](http://carmenere.ucsd.edu/jorge/index.html) at UC San Diego. 
+
+---
 
 {% include figure image_path="/assets/images/uphos.JPG" alt="U-PHOS group picture"%}
