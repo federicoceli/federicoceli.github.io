@@ -30,7 +30,7 @@ In the past I also worked as intern at Amazon Robotics and I took part in two pr
 ---
 **NEWS**
 
-- [**Jan '22**] Read our latest L-CSS [submission](https://arxiv.org/pdf/2201.03656.pdf) on Geometric + Data-driven Controls.
+- [**May '22**] Our latest L-CSS [submission](https://arxiv.org/pdf/2201.03656.pdf) on Geometric + Data-driven Controls has been accepted for publication.
 - [**Dec '21**] Our [work](https://ieeexplore.ieee.org/document/9683707) on distributed optimal data-driven controls appeared in the proceedings of the 60th CDC. Thank you Prof. [Giacomo Baggio](https://baggiogi.github.io) for the significant contribution to this work. 
 - [**Nov '21**] It was fun to work with [Jaimie Swartz](https://people.eecs.berkeley.edu/~jaimie.swartz/index.html) at UC Berkley on conditions for oscillations in the power grid. Read about it on our [submission](https://arxiv.org/abs/2111.04815) to the 2022 ECC.
 - [**Oct '21**] The new L-CSS issue is out, together with our [paper](https://ieeexplore.ieee.org/document/9257486) on Linear Threshold Networks and their application to the study of epilepsy in the human brain. My thanks to [Ahmed Allihboy](https://ahmedallibhoy.github.io) and [Jorge Cortés](http://carmenere.ucsd.edu/jorge/index.html) at UC San Diego. 
