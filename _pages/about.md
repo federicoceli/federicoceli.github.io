@@ -23,13 +23,14 @@ gallery:
     title: "Kiruna (SW), SSC Esrange, with the U-PHOS Module"
 ---
 {% include gallery %}
-I am a third year Ph.D. Candidate in Mechanical Engineering, having joined Professor [Fabio Pasqualetti](http://www.fabiopas.it/)’s lab at UC Riverside in the Fall of 2019. Since then, I have been working on control theory with a focus on optimal data-driven controls and networked controls. In 2018 I graduated with a M.Sc. in Robotics and Automation Engineering from the University of Pisa; during that time I also visited Georgia Tech’s IRIM while working on my dissertation, supervised by Prof.ssa [Lucia Pallottino](http://www.centropiaggio.unipi.it/~pallottino) and Professor [Magnus Egerstedt](https://en.wikipedia.org/wiki/Magnus_Egerstedt). 
+I am a fourth year Ph.D. Candidate in Mechanical Engineering, having joined Professor [Fabio Pasqualetti](http://www.fabiopas.it/)’s lab at UC Riverside in the Fall of 2019. Since then, I have been working on control theory with a focus on optimal data-driven controls and networked controls. In 2018 I graduated with a M.Sc. in Robotics and Automation Engineering from the University of Pisa; during that time I also visited Georgia Tech’s IRIM while working on my dissertation, supervised by Prof.ssa [Lucia Pallottino](http://www.centropiaggio.unipi.it/~pallottino) and Professor [Magnus Egerstedt](https://en.wikipedia.org/wiki/Magnus_Egerstedt). 
 
 In the past I also worked as intern at Amazon Robotics and I took part in two projects sponsored by the European Space Agency. My B.Sc. is in Computer Engineering.  
 
 ---
 **NEWS**
-
+- [**Oct '22**] I will be giving a talk on Distributed Data-driven Control at the 40th SoCal Control Workshop at CalTech.
+- [**July '22**] Two papers on control design from data are accepted for publication at CDC '22. See you in Cancun, Mexico!
 - [**May '22**] Our latest L-CSS [submission](https://arxiv.org/pdf/2201.03656.pdf) on Geometric + Data-driven Controls has been accepted for publication.
 - [**Dec '21**] Our [work](https://ieeexplore.ieee.org/document/9683707) on distributed optimal data-driven controls appeared in the proceedings of the 60th CDC. Thank you Prof. [Giacomo Baggio](https://baggiogi.github.io) for the significant contribution to this work. 
 - [**Nov '21**] It was fun to work with [Jaimie Swartz](https://people.eecs.berkeley.edu/~jaimie.swartz/index.html) at UC Berkley on conditions for oscillations in the power grid. Read about it on our [submission](https://arxiv.org/abs/2111.04815) to the 2022 ECC.
