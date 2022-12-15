@@ -23,12 +23,13 @@ gallery:
     title: "Kiruna (SW), SSC Esrange, with the U-PHOS Module"
 ---
 {% include gallery %}
-I am a fourth year Ph.D. Candidate in Mechanical Engineering, having joined Professor [Fabio Pasqualetti](http://www.fabiopas.it/)’s lab at UC Riverside in the Fall of 2019. Since then, I have been working on control theory with a focus on optimal data-driven controls and networked controls. In 2018 I graduated with a M.Sc. in Robotics and Automation Engineering from the University of Pisa; during that time I also visited Georgia Tech’s IRIM while working on my dissertation, supervised by Prof.ssa [Lucia Pallottino](http://www.centropiaggio.unipi.it/~pallottino) and Professor [Magnus Egerstedt](https://en.wikipedia.org/wiki/Magnus_Egerstedt). 
+I am a fourth year Ph.D. Candidate in Mechanical Engineering at the University of California, Riverside, in Dr. [Fabio Pasqualetti](http://www.fabiopas.it/)’s lab. I work on control theory, with a focus on optimal data-driven controls and network controls. I hold a M.Sc. in Robotics and Automation Engineering (2018) and a B.Sc. in Computer Engineering, both from the from the University of Pisa. I was Visiting Scholar at Georgia Tech in 2018 with Dr. [Magnus Egerstedt](https://en.wikipedia.org/wiki/Magnus_Egerstedt). 
 
-In the past I also worked as intern at Amazon Robotics and I took part in two projects sponsored by the European Space Agency. My B.Sc. is in Computer Engineering.  
+I interned at Amazon Robotics in 2018 and I took part in two projects sponsored by the European Space Agency.
 
 ---
 **NEWS**
+- [**Dec '22**] CDC in Cancun was a blast. If you missed them, I shared the [videos](https://youtu.be/4UpaSSjazic) for [both](https://youtu.be/8isbG4b-Cgs) of my papers on YouTube. 
 - [**Oct '22**] I will be giving a talk on Distributed Data-driven Control at the 40th SoCal Control Workshop at CalTech.
 - [**July '22**] Two papers on control design from data are accepted for publication at CDC '22. See you in Cancun, Mexico!
 - [**May '22**] Our latest L-CSS [submission](https://arxiv.org/pdf/2201.03656.pdf) on Geometric + Data-driven Controls has been accepted for publication.
