@@ -23,12 +23,13 @@ gallery:
     title: "Kiruna (SW), SSC Esrange, with the U-PHOS Module"
 ---
 {% include gallery %}
-I am a fourth year Ph.D. Candidate in Mechanical Engineering at the University of California, Riverside, in Dr. [Fabio Pasqualetti](http://www.fabiopas.it/)’s lab. I work on control theory, with a focus on optimal data-driven controls and network controls. I hold a M.Sc. in Robotics and Automation Engineering (2018) and a B.Sc. in Computer Engineering, both from the from the University of Pisa. I was Visiting Scholar at Georgia Tech in 2018 with Dr. [Magnus Egerstedt](https://en.wikipedia.org/wiki/Magnus_Egerstedt). 
+I am a fourth year Ph.D. Candidate in Mechanical Engineering at the University of California, Riverside, in Dr. [Fabio Pasqualetti](http://www.fabiopas.it/)’s lab. I work on control theory, with a focus on optimal data-driven controls and network controls. I hold a M.Sc. in Robotics and Automation Engineering (2018) and a B.Sc. in Computer Engineering, both from the from the University of Pisa. I was Visiting Scholar at Georgia Tech in 2018 with Dr. [Magnus Egerstedt](https://en.wikipedia.org/wiki/Magnus_Egerstedt) and Prof.ssa [Lucia Pallottino](https://www.centropiaggio.unipi.it/~pallottino). 
 
 I interned at Amazon Robotics in 2018 and I took part in two projects sponsored by the European Space Agency.
 
 ---
 **NEWS**
+- [**Mar '23**] Check out our latest [publication](https://ieeexplore.ieee.org/document/10076813) on the Open Journal of Controls Systems!
 - [**Dec '22**] CDC in Cancun was a blast. If you missed them, I shared the [videos](https://youtu.be/4UpaSSjazic) for [both](https://youtu.be/8isbG4b-Cgs) of my papers on YouTube. 
 - [**Oct '22**] I will be giving a talk on Distributed Data-driven Control at the 40th SoCal Control Workshop at CalTech.
 - [**July '22**] Two papers on control design from data are accepted for publication at CDC '22. See you in Cancun, Mexico!
