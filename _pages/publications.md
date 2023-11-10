@@ -6,6 +6,10 @@ classes: wide
 ---
 ## Journal Papers
 
+1.  **F. Celi**, G. Baggio, and F. Pasqualetti ["Closed-form and Robust
+    Expressions for Data-driven LQ
+    Control"](https://www.sciencedirect.com/journal/annual-reviews-in-control), Annual Reviews on
+    Control (ARC), 2023. _(To appear)_
 1. **F. Celi**, G. Baggio, and F. Pasqualetti ["Distributed Data-Driven Control of Network
 Systems"](https://ieeexplore.ieee.org/document/10076813), IEEE Open Journal of Control Systems (OJ-CSYS), 2023.
 1. **F. Celi** and F. Pasqualetti ["Data-driven Meets Geometric Control: Zero Dynamics, Subspace Stabilization, and Malicious Attacks"](https://ieeexplore.ieee.org/document/9763859?source=authoralert), IEEE Control Systems Letters (L-CSS), 2022. [PDF](/
@@ -16,7 +20,7 @@ Oscillations"](), IEEE Open Journal of Control Systems (OJ-CSYS), 2022. [PDF](/a
 2. **F. Celi**, L. Wang, L. Pallottino, and M. Egerstedt, ["Deconfliction of Motion Paths with Traffic Inspired Rules in Robot-Robot and Human-Robot Interactions"](https://ieeexplore.ieee.org/document/8643446/), IEEE Robotics and Automation Letters (RA-L), 2019, <i class="fas fa-trophy" aria-hidden="true"></i> **ICRA 2019 Best Paper Award on Human-Robot Interaction - Finalist**. [PDF](/assets/pdf/19-FC-LW-LP-ME.pdf)
 
 ## Conference Papers
-1. **F. Celi**, G. Baggio, and F. Pasqualetti, "Data-driven Eigenstructure Assignment for Sparse Feedback Design", IEEE Conf. on Decision and Control, Marina Bay Sands, Singapore, December 2023. _Submitted_ 
+1. **F. Celi**, G. Baggio, and F. Pasqualetti, "Data-driven Eigenstructure Assignment for Sparse Feedback Design", IEEE Conf. on Decision and Control, Marina Bay Sands, Singapore, December 2023. _(To appear)_ 
 1. **F. Celi**, G. Baggio, and F. Pasqualetti, ["Closed-form Estimates of the LQR Gain From Finite Data"](https://ieeexplore.ieee.org/document/9992708), IEEE Conf. on Decision and Control, Cancún, Mexico, December 2022. 
 1. J. Swartz, **F. Celi**, F. Pasqualetti, and A. von Meier, ["Parameter Conditions to Prevent Voltage Oscillations Caused by LTC-Inverter Hunting on Power Distribution Grids"](https://ieeexplore.ieee.org/document/9838092), European Control Conference, London, UK, 2022.
 1. **F. Celi**, G. Baggio, and F. Pasqualetti, ["Distributed Learning of Optimal Controls for Linear Systems"](https://ieeexplore.ieee.org/document/9683707), IEEE Conf. on Decision and Control, Austin, TX, December 2021. [PDF](/assets/pdf/21-FC-GB-FP.pdf)
