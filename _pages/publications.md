@@ -8,8 +8,9 @@ classes: wide
 
 1.  **F. Celi**, G. Baggio, and F. Pasqualetti ["Closed-form and Robust
     Expressions for Data-driven LQ
-    Control"](https://www.sciencedirect.com/journal/annual-reviews-in-control), Annual Reviews in
-    Control (ARC), 2023. _(To appear)_
+    Control"](https://www.sciencedirect.com/science/article/pii/S1367578823000809), Annual Reviews in
+    Control (ARC), 2023. [PDF](/
+assets/pdf/23-FC-GB-FP.pdf)
 1. **F. Celi**, G. Baggio, and F. Pasqualetti ["Distributed Data-Driven Control of Network
 Systems"](https://ieeexplore.ieee.org/document/10076813), IEEE Open Journal of Control Systems (OJ-CSYS), 2023.
 1. **F. Celi** and F. Pasqualetti ["Data-driven Meets Geometric Control: Zero Dynamics, Subspace Stabilization, and Malicious Attacks"](https://ieeexplore.ieee.org/document/9763859?source=authoralert), IEEE Control Systems Letters (L-CSS), 2022. [PDF](/
